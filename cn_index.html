@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="王滔滔，深圳大学副教授，主要研究面向可信智能的网络与分布式系统。">
+<meta name="keywords" content="王滔滔, Taotao Wang, 深圳大学, 区块链, 可信人工智能, 无线网络, 分布式系统, Web 3.0">
+<title>王滔滔 | 深圳大学</title>
+<style>
+  :root{
+    --bg:#eef4fb;--bg-soft:#f8fbff;--surface:rgba(255,255,255,.84);--text:#0b1b33;--muted:#4f617d;
+    --line:#d8e4f2;--accent:#0f4ec9;--accent2:#0ea5a4;--accent3:#ff8a3d;--shadow:0 24px 80px rgba(12,33,66,.12)
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;color:var(--text);
+    background:
+      radial-gradient(circle at top left, rgba(15,78,201,.14), transparent 28%),
+      radial-gradient(circle at top right, rgba(14,165,164,.16), transparent 24%),
+      linear-gradient(180deg, #f8fbff 0%, #eef4fb 52%, #f8fbff 100%);
+    font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC","Aptos","Segoe UI","Helvetica Neue",Arial,sans-serif;line-height:1.72
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background-image:
+      linear-gradient(rgba(15,78,201,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15,78,201,.04) 1px, transparent 1px);
+    background-size:34px 34px;mask-image:linear-gradient(180deg, rgba(0,0,0,.6), transparent 92%)
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  img{display:block;max-width:100%}
+  .topbar{
+    position:sticky;top:0;z-index:20;background:rgba(248,251,255,.82);backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(216,228,242,.9)
+  }
+  .container,.topbar-inner{width:min(1180px, calc(100% - 32px));margin:0 auto;position:relative;z-index:1}
+  .topbar-inner{
+    display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:72px
+  }
+  .brand{display:flex;flex-direction:column;gap:2px}
+  .brand strong{font-size:1rem;letter-spacing:.08em;text-transform:uppercase}
+  .brand span{font-size:.92rem;color:var(--muted)}
+  .nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:18px;font-size:.96rem}
+  .nav a{color:var(--text);opacity:.88}
+  .nav a:hover{text-decoration:none;color:var(--accent)}
+  main{padding:28px 0 72px}
+  section{margin-top:52px}
+  section + section{padding-top:34px;border-top:1px solid var(--line)}
+  .panel,.card{
+    background:var(--surface);border:1px solid rgba(216,228,242,.95);border-radius:24px;
+    box-shadow:var(--shadow);backdrop-filter:blur(14px)
+  }
+  .hero{display:grid;grid-template-columns:1.5fr .85fr;gap:42px;align-items:stretch}
+  .hero-copy{padding:34px;position:relative;overflow:hidden}
+  .hero-copy::after{
+    content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;
+    background:radial-gradient(circle, rgba(14,165,164,.16), rgba(14,165,164,0));z-index:0
+  }
+  .hero-copy > *{position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;color:#47657e;font-size:.82rem;font-weight:700;
+    letter-spacing:.14em;text-transform:uppercase
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#47657e}
+  h1{
+    margin:14px 0 12px;font-size:clamp(2.3rem, 4vw, 4.4rem);line-height:1.02;letter-spacing:-.04em
+  }
+  .hero-name-image{
+    position:absolute;right:54px;top:94px;width:155px;height:auto;z-index:1;
+    filter:drop-shadow(0 10px 22px rgba(9,33,71,.08))
+  }
+  .subtitle{
+    max-width:720px;
+    margin:0 0 18px;
+    font-size:1.14rem;
+    color:#47657e;
+    font-family:inherit;
+    font-weight:700;
+    letter-spacing:.02em
+  }
+  .lead{max-width:760px;margin:0;font-size:1.04rem}
+  .action-row,.contact-row{display:flex;flex-wrap:wrap;gap:12px}
+  .meta-line{margin-top:18px;color:var(--muted);font-size:.96rem}
+  .meta-line-emphasis{
+    color:#47657e;
+    font-weight:700;
+    letter-spacing:.02em
+  }
+  .contact-row{margin-top:22px;color:var(--muted);font-size:.96rem}
+  .action-row{margin-top:26px}
+  .button{
+    display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 16px;border-radius:999px;
+    font-weight:700;border:1px solid transparent;transition:transform .18s ease, box-shadow .18s ease
+  }
+  .button:hover{text-decoration:none;transform:translateY(-1px)}
+  .button-primary{background:linear-gradient(135deg, var(--accent), #2967de);color:#fff;box-shadow:0 14px 32px rgba(15,78,201,.26)}
+  .button-secondary{background:rgba(255,255,255,.78);border-color:rgba(15,78,201,.16);color:var(--text)}
+  .hero-side{height:100%;padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+  .photo-card{padding:16px;border-radius:20px;background:linear-gradient(180deg, rgba(255,255,255,.95), rgba(241,247,255,.92));border:1px solid rgba(216,228,242,.95)}
+  .photo-wrap{position:relative;overflow:hidden;border-radius:18px}
+  .photo-wrap::after{
+    content:"";position:absolute;inset:auto -30px -30px auto;width:160px;height:160px;border-radius:50%;
+    background:radial-gradient(circle, rgba(255,138,61,.24), transparent 68%)
+  }
+  .logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .logo-card{display:grid;place-items:center;min-height:88px;padding:10px;border-radius:16px;background:rgba(255,255,255,.86);border:1px solid rgba(216,228,242,.95)}
+  .logo-card img{width:100%;max-width:72px;max-height:58px;object-fit:contain}
+  .stats,.grid-2,.grid-3,.news-grid,.research-grid{display:grid;gap:26px}
+  .stats{display:none}
+  .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid-3,.research-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .news-grid{grid-template-columns:1fr}
+  .stat-card,.card{padding:22px}
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px}
+  .section-head h2{margin:0;font-size:clamp(1.5rem, 2vw, 2.2rem);letter-spacing:-.04em}
+  .section-head p{max-width:none;margin:0;color:var(--muted)}
+  .timeline{display:grid;gap:18px}
+  .timeline-item{padding:0 0 0 16px;border-radius:0;background:transparent;border:0;border-left:2px solid var(--line)}
+  .timeline-item strong{display:block;margin-bottom:4px}
+  .research-card{padding:0 0 24px;overflow:hidden}
+  .research-card img{width:100%;height:190px;object-fit:cover;border-radius:24px 24px 0 0}
+  .research-copy{padding:18px 22px 0}
+  .research-copy h3,.card h3{margin-top:0}
+  .research-copy h3{
+    color:#47657e;
+    font-family:inherit;
+    font-weight:700;
+    letter-spacing:.01em
+  }
+  .research-copy p,.card p,.news-card p,.pub-note{color:var(--muted)}
+  .position-card{
+    background:
+      radial-gradient(circle at top right, rgba(14,165,164,.16), transparent 26%),
+      linear-gradient(135deg, rgba(15,78,201,.06), rgba(255,255,255,.84))
+  }
+  .position-keyword{
+    color:#47657e;
+    font-weight:700;
+    letter-spacing:.01em
+  }
+  .news-badge{
+    display:inline-flex;padding:0;color:var(--accent3);
+    font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase
+  }
+  #news .highlight-list strong{
+    color:#47657e;
+    font-weight:700;
+    letter-spacing:.02em
+  }
+  .news-accent{
+    color:#47657e;
+    font-weight:700
+  }
+  .pub-note{margin:0 0 16px}
+  .pub-year{margin-top:18px;border-top:1px solid var(--line);border-radius:0;background:transparent;overflow:visible}
+  .pub-year summary{
+    cursor:pointer;list-style:none;padding:18px 0 14px;font-weight:800;font-size:1.02rem;
+    background:transparent
+  }
+  .pub-year summary::-webkit-details-marker{display:none}
+  .pub-year summary::after{content:"+";float:right;color:var(--accent);font-size:1.15rem}
+  .pub-year[open] summary::after{content:"-"}
+  .pub-year ol{margin:0;padding:0 0 10px 22px}
+  .pub-year li{margin:0 0 18px;padding-left:4px}
+  .paper-title{
+    color:#47657e;
+    font-family:"Georgia","Times New Roman","Noto Serif SC","Songti SC","STSong","SimSun",serif;
+    font-weight:700;
+    letter-spacing:.01em
+  }
+  .paper-meta{display:block;color:var(--muted);margin-top:4px}
+  .paper-meta strong:last-of-type{
+    color:#47657e;
+    font-weight:700
+  }
+  .pub-list{
+    margin:0;
+    padding:22px 22px 22px 44px;
+    background:var(--surface);
+    border:1px solid rgba(216,228,242,.95);
+    border-radius:24px;
+    box-shadow:var(--shadow);
+    backdrop-filter:blur(14px)
+  }
+  .pub-list li{margin:0 0 18px;padding-left:4px}
+  .list{margin:0;padding-left:20px}
+  .list li{margin-bottom:10px}
+  .highlight-list{margin:0;padding-left:20px}
+  .highlight-list li{margin-bottom:12px}
+  .split-list{columns:2;column-gap:26px;padding-left:20px;margin:0}
+  .split-list li{break-inside:avoid;margin-bottom:10px}
+  #funding .card h3,#service .card h3{
+    color:#47657e;
+    font-family:"Noto Serif SC","Songti SC","STSong","SimSun","Georgia","Times New Roman",serif;
+    font-weight:700;
+    letter-spacing:.01em
+  }
+  #awards .list li{
+    color:#47657e;
+    font-weight:600
+  }
+  #service .list li,#service .split-list li{color:#47657e}
+  .service-role{
+    color:#47657e;
+    font-weight:700
+  }
+  .footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--muted);font-size:.95rem}
+  @media (max-width:1024px){
+    .hero,.stats,.grid-2,.grid-3,.news-grid,.research-grid{grid-template-columns:1fr}
+    .hero-name-image{position:static;display:block;width:134px;margin:-2px 0 14px auto}
+  }
+  @media (max-width:720px){
+    .topbar-inner{flex-direction:column;align-items:flex-start;padding:14px 0}
+    .nav{justify-content:flex-start;gap:14px}
+    main{padding-top:20px}
+    .hero-copy,.hero-side,.card,.stat-card{padding:20px}
+    .split-list{columns:1}
+    .logo-grid{grid-template-columns:repeat(2,1fr)}
+    .research-card img{height:180px}
+  }
+</style>
+</head>
+<body id="top">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <strong>Taotao Wang</strong>
+        <span>深圳大学 | 网络化系统、可信人工智能与区块链</span>
+      </div>
+      <nav class="nav">
+        <a href="#about">关于我</a>
+        <a href="#research">研究方向</a>
+        <a href="#positions">招生与招募</a>
+        <a href="#news">近期亮点</a>
+        <a href="#publications">论文</a>
+        <a href="#funding">项目</a>
+        <a href="#awards">奖励与荣誉</a>
+        <a href="#service">学术服务</a>
+        <a href="index.html">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="panel hero-copy">
+        <div class="eyebrow">深圳大学副教授</div>
+        <h1>Taotao Wang</h1>
+        <img class="hero-name-image" src="chinese_name.png" alt="王滔滔">
+        <p class="subtitle">面向可信智能的网络与分布式系统</p>
+        <p class="lead">
+          我的研究位于网络通信、分布式系统、人工智能与密码安全的交叉地带，关注大规模网络化系统如何同时实现更高效率、去中心化协同与可信智能。当前重点包括区块链与 Web 3.0 基础设施、可信与可验证人工智能，以及智能无线与边缘网络。
+        </p>
+        <div class="meta-line meta-line-emphasis">深圳大学副教授 | 斯坦福-爱思唯尔全球前2%高被引科学家 | 香港中文大学信息工程博士</div>
+        <div class="contact-row">
+          <span><strong>邮箱:</strong> ttwang[#AT#]szu.edu.cn</span>
+          <span><strong>备用邮箱:</strong> postman511[#AT#]gmail.com</span>
+        </div>
+        <div class="action-row">
+          <a class="button button-primary" href="#research">查看研究</a>
+          <a class="button button-secondary" href="#positions">加入团队</a>
+        </div>
+      </div>
+
+      <aside class="panel hero-side">
+        <div class="photo-card">
+          <div class="photo-wrap">
+            <img src="Photo_Taotao_Wang1.jpg" alt="王滔滔照片">
+          </div>
+        </div>
+        <div class="logo-grid">
+          <div class="logo-card"><img src="szulogo.gif" alt="深圳大学"></div>
+          <div class="logo-card"><img src="cuhk_logo.png" alt="香港中文大学"></div>
+          <div class="logo-card"><img src="bupt_logo.png" alt="北京邮电大学"></div>
+          <div class="logo-card"><img src="uestc_logo.jpg" alt="电子科技大学"></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about">
+      <div class="section-head">
+        <div>
+          <h2>关于我</h2>
+          <p>以去中心化系统、可信人工智能与密码机制为核心，依托网络化系统方法，面向下一代信息基础设施开展系统研究。</p>
+        </div>
+      </div>
+      <div class="card">
+        <p>
+          我于 2015 年在香港中文大学获得信息工程博士学位，导师为 Soung-Chang Liew 教授。此前，我于 2011 年获得北京邮电大学信息与信号处理硕士学位，并于 2008 年获得电子科技大学电气工程及其自动化学士学位。
+        </p>
+        <p>
+          2015 至 2016 年，我在香港中文大学网络编码研究所从事博士后研究。2016 年加入深圳大学，现任电子与信息工程学院副教授，同时依托广东省金融科技及数字经济社会科学研究基地开展研究工作。
+        </p>
+        <p>
+          我的长期目标是设计新系统，而不仅是研究孤立算法。贯穿这些工作的主线，是把通信与网络机制、AI 驱动的决策方法以及密码学信任机制结合起来，构建能够在开放、动态和去中心化环境中可靠运行的系统。
+        </p>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="section-head">
+        <div>
+          <h2>研究方向</h2>
+          <p>
+            我关注网络化系统如何联合实现高性能、去中心化协同与可信智能，结合网络与分布式系统、机器学习和密码安全技术，研究系统建模、协议设计、性能优化与原型实现。
+          </p>
+        </div>
+      </div>
+      <div class="research-grid">
+        <article class="card research-card">
+          <img src="web3.jpg" alt="区块链与去中心化系统">
+          <div class="research-copy">
+            <h3>区块链与去中心化系统</h3>
+            <p>面向智能体互联网的协同与服务、去中心化身份与准入控制、共识协议、区块链网络测量与优化、DePIN，以及 Web 3.0 基础设施与应用。</p>
+          </div>
+        </article>
+        <article class="card research-card">
+          <img src="Trustworthy-AI.png" alt="可信与可验证人工智能">
+          <div class="research-copy">
+            <h3>可信与可验证人工智能</h3>
+            <p>隐私保护与可验证机器学习、联邦学习、可问责的大语言模型与多智能体系统、零知识与密码学验证、安全生物识别智能，以及可审计的 AI 机制。</p>
+          </div>
+        </article>
+        <article class="card research-card">
+          <img src="Wireless_Communication_Networks.jpg" alt="智能无线与边缘网络">
+          <div class="research-copy">
+            <h3>智能无线与边缘网络</h3>
+            <p>基于学习与智能体的无线接入、信息时效优化、面向边缘 IoT 的频谱感知共识、资源分配、协同通信、边缘智能，以及面向动态无线环境的自适应网络机制。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="positions">
+      <div class="section-head">
+        <div>
+          <h2>招生与招募</h2>
+          <p>欢迎对系统构建与交叉研究感兴趣的学生和研究人员加入，在网络、人工智能、安全与去中心化基础设施交叉方向开展研究。</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card position-card">
+          <h3>我期待的学生与合作者</h3>
+          <ul class="list">
+            <li>对区块链、分布式系统、可信人工智能或智能网络方向感兴趣的<span class="position-keyword">博士生</span>。</li>
+            <li>希望接受项目制科研训练、并愿意做较强实现工作的<span class="position-keyword">硕士生</span>。</li>
+            <li>从事区块链与分布式系统、大语言模型与多智能体系统、可信机器学习方向的<span class="position-keyword">博士后或研究人员</span>。</li>
+            <li>逻辑清晰、动手能力强、具有自驱力的<span class="position-keyword">本科科研实习生</span>。</li>
+          </ul>
+        </div>
+        <div class="card position-card">
+          <h3>你将获得的训练与机会</h3>
+          <ul class="list">
+            <li>从问题提出、系统设计、实现、实验到论文写作的完整科研训练。</li>
+            <li>参与协议设计、系统原型、面向系统的人工智能方法、隐私与安全机制以及真实场景应用的机会。</li>
+            <li>可直接加入区块链、可信人工智能、大语言模型多智能体系统、无线与边缘网络等活跃项目。</li>
+            <li>如有兴趣，请邮件发送个人简历、成绩单，以及一段简短的研究兴趣说明。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="section-head">
+        <div>
+          <h2>近期亮点</h2>
+          <p>这些成果最能反映团队当前的研究进展与发展势头。</p>
+        </div>
+      </div>
+      <div class="card">
+        <ul class="highlight-list">
+          <li><strong>2026 年。</strong> 论文 <em>HiveMind: Contribution-Guided Online Prompt Optimization of LLM Multi-Agent Systems</em> 被 <span class="news-accent">AAAI 2026</span> 录用。</li>
+          <li><strong>2026 年。</strong> 论文 <em>VeriLoRA: Fine-Tuning Large Language Models with Verifiable Security via Zero-Knowledge Proofs</em> 被 <span class="news-accent">NDSS 2026</span> 录用。</li>
+          <li><strong>2025 年。</strong> 入选 2025 <span class="news-accent">斯坦福-爱思唯尔全球前2%高被引科学家</span>。</li>
+          <li><strong>2025 年。</strong> 关于去中心化身份与可信匿名性的论文 <em>Linking Souls to Humans</em> 被 <span class="news-accent">ACM WWW 2025</span> 录用。</li>
+          <li><strong>2023 年。</strong> 团队获得 <span class="news-accent">ScalingX Zero-Knowledge Hackathon</span> 优胜奖，以及香港 <span class="news-accent">Web 3.0 Innovation Hackathon</span> 银奖。</li>
+          <li><strong>2022-2023 年。</strong> 多智能体无线接入相关工作入选 <span class="news-accent">ESI 高被引论文（Highly Cited Paper）</span>，团队在 <span class="news-accent">iDASH 2022 区块链挑战赛</span> 中获得荣誉提名（Honorable Mention）。</li>
+        </ul>
+      </div>
+    </section>
+    <section id="publications">
+      <div class="section-head">
+        <div>
+          <h2>代表性论文</h2>
+          <p>按时间倒序列出部分代表性成果，覆盖区块链与去中心化系统、可信人工智能以及智能无线网络等方向。</p>
+        </div>
+      </div>
+      <p class="pub-note">* 通讯作者。# 共同一作。</p>
+
+      <ol class="pub-list">
+        <li><span class="paper-title">Zero-Knowledge Federated Learning: A New Trustworthy and Privacy-Preserving Distributed Learning Paradigm</span><span class="paper-meta"><strong>Taotao Wang</strong>, Yuxin Jin, Qing Yang, Yihan Xia, Long Shi, Shengli Zhang. <strong>IEEE Communications Magazine</strong>, 2026. [CAS Q1]</span></li>
+        <li><span class="paper-title">Eth2.0-NA: Modeling Message Propagation to Optimize Mesh Size in Ethereum 2.0 Network</span><span class="paper-meta">Chonghe Zhao, Yipeng Zhou, Shengli Zhang, <strong>Taotao Wang</strong>, Quan Z. Sheng, Lisheng Fan. <strong>IEEE INFOCOM 2026</strong>, 2026. [CCF-A]</span></li>
+        <li><span class="paper-title">HiveMind: Contribution-Guided Online Prompt Optimization of LLM Multi-Agent Systems</span><span class="paper-meta">Yihan Xia, <strong>Taotao Wang*</strong>, Shengli Zhang, Zhangyuhua Weng, Bin Cao, Soung Chang Liew. <strong>AAAI 2026</strong>, 2026. [CCF-A]</span></li>
+        <li><span class="paper-title">VeriLoRA: Fine-Tuning Large Language Models with Verifiable Security via Zero-Knowledge Proofs</span><span class="paper-meta">Guofu Liao, <strong>Taotao Wang*</strong>, Shengli Zhang, Jiqun Zhang, Shi Long, Dacheng Tao. <strong>NDSS 2026</strong>, 2026. [CCF-A]</span></li>
+        <li><span class="paper-title">TDC-Cache: A Trustworthy Decentralized Cooperative Caching Framework for Web 3.0</span><span class="paper-meta">Jinyu Chen, Long Shi, <strong>Taotao Wang</strong>, Jiaheng Wang, Wei Zhang. <strong>IEEE Transactions on Mobile Computing</strong>, Early Access, Dec. 2025. [CCF-A]</span></li>
+        <li><span class="paper-title">SpectrumBC: A Blockchain-Aided Cooperative Spectrum Sensing Framework</span><span class="paper-meta">Yafan Yang, Long Shi, Zhe Wang, Jun Li, <strong>Taotao Wang</strong>, Jiaheng Wang. <strong>IEEE Transactions on Cognitive Communications and Networking</strong>, Vol. 11, No. 6, pp. 3926-3938, Dec. 2025. [CAS Q1]</span></li>
+        <li><span class="paper-title">Programming on Bitcoin: A Survey of Layer 1 and Layer 2 Technologies in Bitcoin Ecosystem</span><span class="paper-meta">Guofu Liao, <strong>Taotao Wang*</strong>, Long Shi, Jiqun Zhang, Yihan Xia, Qing Yang, Xiaoxiao Wu, Shengli Zhang. <strong>Blockchain: Research and Applications</strong>, Oct. 2025. [CAS Q2]</span></li>
+        <li><span class="paper-title">A Hierarchical Deep Learning Framework for Pair Trading with Attention and Graph Networks</span><span class="paper-meta">Yihan Xia, <strong>Taotao Wang*</strong>, Soung Chang Liew, Shengli Zhang. <strong>Expert Systems with Applications</strong>, Vol. 291, Oct. 2025. [CAS Q1]</span></li>
+        <li><span class="paper-title">Proof-of-trusted-work: A lightweight blockchain consensus for decentralized IoT networks</span><span class="paper-meta">Pengzhan Jiang, Long Shi, Bin Cao, <strong>Taotao Wang</strong>, Baofeng Ji, Jun Li. <strong>Digital Communications and Networks</strong>, Vol. 11, No. 4, pp. 1055-1066, Aug. 2025. [CAS Q2]</span></li>
+        <li><span class="paper-title">A Novel and Secure Machine Learning-Based Hyperledger Blockchain for IoT Healthcare</span><span class="paper-meta">Sidra Aslam, Saba Aslam, <strong>Taotao Wang*</strong>, Daquan Feng, Shengli Zhang. <strong>IEEE Internet of Things Journal</strong>, Vol. 12, No. 15, pp. 31126-31140, Aug. 2025. [CAS Q1]</span></li>
+        <li><span class="paper-title">A Deep-Learning-Based MAC for Integrating Channel Access, Rate Adaptation and Channel Switch</span><span class="paper-meta">Jiantao Xin, Wei Xu, Bin Cao, <strong>Taotao Wang*</strong>, Shengli Zhang. <strong>Digital Communications and Networks</strong>, Vol. 11, No. 4, pp. 1042-1054, Aug. 2025. [CAS Q2]</span></li>
+        <li><span class="paper-title">Web 3.0: A Survey on the Architectures, Enabling Technologies, Applications, and Challenges</span><span class="paper-meta">Bin Cao, Shaohe Xiao, Long Shi, <strong>Taotao Wang</strong>, Jinyu Chen, Jiaheng Wang, Xintong Ling, Hao Xu, Shengli Zhang, Erwu Liu. <strong>IEEE Communications Surveys &amp; Tutorials</strong>, July 2025. [CAS Q1]</span></li>
+        <li><span class="paper-title">Linking Souls to Humans: Blockchain Accounts with Credible Anonymity for Web 3.0 Decentralized Identity</span><span class="paper-meta"><strong>Taotao Wang</strong>, Zibin Lin, Shengli Zhang, Long Shi, Qing Yang, Boris D&uuml;dder. <strong>ACM WWW 2025</strong>, pp. 1-9, 2025. [CCF-A]</span></li>
+        <li><span class="paper-title">Bodyless Block Propagation: TPS Fully Scalable Blockchain with Pre-Validation</span><span class="paper-meta">Chonghe Zhao, Shengli Zhang, <strong>Taotao Wang</strong>, Soung Chang Liew. <strong>Future Generation Computer Systems</strong>, Vol. 163, 2025. [CAS Q1]</span></li>
+        <li><span class="paper-title">Decentralized Physical Infrastructure Network (DePIN): Challenges and Opportunities</span><span class="paper-meta">Zibin Lin, <strong>Taotao Wang</strong>, Long Shi, Shengli Zhang, Bin Cao. <strong>IEEE Network Magazine</strong>, 2025. [CAS Q1]</span></li>
+
+        <li><span class="paper-title">DEthna: Accurate Ethereum Network Topology Discovery with Marked Transactions</span><span class="paper-meta">Chonghe Zhao, Yipeng Zhou, Shengli Zhang, <strong>Taotao Wang</strong>, Quan Z. Sheng, Song Guo. <strong>IEEE INFOCOM 2024</strong>, pp. 1-10, May 2024. [CCF-A]</span></li>
+        <li><span class="paper-title">Learning-Based Autonomous Channel Access in the Presence of Hidden Terminals</span><span class="paper-meta">Yulin Shao, Yucheng Cai, <strong>Taotao Wang*</strong>, Ziyang Guo, Peng Liu, Jiajun Luo, Deniz Gunduz. <strong>IEEE Transactions on Mobile Computing</strong>, Vol. 23, No. 5, pp. 3680-3695, May 2024. [CCF-A]</span></li>
+        <li><span class="paper-title">Blockchain-aided Decentralized Trust Management of Edge Computing: Towards Reliable Off-chain and On-chain Trust</span><span class="paper-meta">Long Shi, <strong>Taotao Wang*</strong>, Zehui Xiong, Zhe Wang, Yang Liu, Jun Li. <strong>IEEE Network Magazine</strong>, Vol. 38, No. 5, pp. 182-188, May 2024. [CAS Q1]</span></li>
+        <li><span class="paper-title">Reputation-Based Streamlet: An Enhanced BFT Consensus Algorithm for Improved Performance and Scalability</span><span class="paper-meta">Bo Fang, Dancheng Zhao, <strong>Taotao Wang</strong>, Hao Wang, Shengli Zhang, Qing Yang. <strong>IEEE ICPADS 2023</strong>, pp. 699-706, Dec. 2023. [CCF-C]</span></li>
+        <li><span class="paper-title">Account Service Network: A Unified Decentralized Web 3.0 Portal with Credible Anonymity</span><span class="paper-meta"><strong>Taotao Wang</strong>, Shengli Zhang, Qing Yang, Soung Chang Liew. <strong>IEEE Network Magazine</strong>, Vol. 37, No. 6, pp. 101-108, Nov. 2023. [CAS Q1]</span></li>
+        <li><span class="paper-title">HCB: Enabling Compact Block in Ethereum Network with Secondary Pool and Transaction Prediction</span><span class="paper-meta">Chonghe Zhao, <strong>Taotao Wang</strong>, Shengli Zhang, Soung Chang Liew. <strong>IEEE Transactions on Network Science and Engineering</strong>, Vol. 11, No. 1, pp. 1077-1092, Oct. 2023. [CAS Q2]</span></li>
+        <li><span class="paper-title">A blockchain-empowered framework for decentralized trust management in Internet of Battlefield Things</span><span class="paper-meta">Houtian Wang, <strong>Taotao Wang#*</strong>, Long Shi, Naijin Liu, Shengli Zhang. <strong>Computer Networks</strong>, Vol. 237, 2023. [CAS Q2]</span></li>
+        <li><span class="paper-title">Revisiting Non-coherent Detection of Differential PSK: A Factor Graph Perspective</span><span class="paper-meta">Long Shi, <strong>Taotao Wang*</strong>, Zhen Mei, Xianggen Xia. <strong>IEEE Communications Letters</strong>, Vol. 27, No. 2, pp. 701-705, Feb. 2023. [CAS Q2]</span></li>
+        <li><span class="paper-title">Pooling is not Favorable: Decentralize Mining Power of PoW Blockchain Using Age-of-Work</span><span class="paper-meta">Long Shi#, <strong>Taotao Wang#*</strong>, Jun Li, Shengli Zhang. <strong>IEEE Transactions on Cloud Computing</strong>, Vol. 11, No. 3, pp. 2756-2769, Dec. 2022. [CAS Q2]</span></li>
+        <li><span class="paper-title">Multi-Agent Deep Reinforcement Learning Multiple Access for Heterogeneous Wireless Networks With Imperfect Channels</span><span class="paper-meta">Yiding Yu, Soung Chang Liew, <strong>Taotao Wang</strong>. <strong>IEEE Transactions on Mobile Computing</strong>, Vol. 21, No. 10, pp. 3718-3730, Oct. 2022. [CCF-A]</span></li>
+        <li><span class="paper-title">A Novel Oracle-aided Industrial IoT Blockchain: Architecture, Challenges, and Potential Solutions</span><span class="paper-meta">Yu Du, Jun Li, Long Shi, Zhe Wang, <strong>Taotao Wang</strong>, Zhu Han. <strong>IEEE Network Magazine</strong>, Aug. 2022. [CAS Q1]</span></li>
+        <li><span class="paper-title">When Federated Learning Meets Blockchain: A New Distributed Learning Paradigm</span><span class="paper-meta">Chuan Ma, Jun Li, Ming Ding, Long Shi, <strong>Taotao Wang</strong>, Zhu Han, H. Vincent Poor. <strong>IEEE Computational Intelligence Magazine</strong>, Vol. 17, No. 3, pp. 26-33, Aug. 2022. [CAS Q1]</span></li>
+        <li><span class="paper-title">Speeding up Block Propagation in Bitcoin Network: Uncoded and Coded Designs</span><span class="paper-meta">Lihao Zhang, <strong>Taotao Wang*</strong>, Soung Chang Liew. <strong>Computer Networks</strong>, Vol. 207, 2022. [CAS Q2]</span></li>
+
+        <li><span class="paper-title">Secure Blockchain Platform for Industrial IoT with Trusted Computing Hardware</span><span class="paper-meta">Qing Yang, Hao Wang, Xiaoxiao Wu, <strong>Taotao Wang</strong>, Shengli Zhang, Naijin Liu. <strong>IEEE Internet of Things Magazine</strong>, Vol. 4, No. 4, pp. 86-92, Dec. 2021.</span></li>
+        <li><span class="paper-title">On Dynamic Resource Allocation for Blockchain Assisted Federated Learning Over Wireless Channels</span><span class="paper-meta">Xiumei Deng, Jun Li, Long Shi, Zhe Wang, Hui Wang, <strong>Taotao Wang</strong>. <strong>IEEE CPSCom 2021</strong>. [Best Paper Award Runner-up]</span></li>
+        <li><span class="paper-title">Speeding Up Block Propagation in Bitcoin Network: A Cut-through Relaying Scheme</span><span class="paper-meta">Lihao Zhang, <strong>Taotao Wang*</strong>, Soung Chang Liew. <strong>IEEE CPSCom 2021</strong>. [Best Student Paper Award]</span></li>
+        <li><span class="paper-title">Non-Uniform Time-Step Deep Q-Network for Carrier-Sense Multiple Access in Heterogeneous Wireless Networks</span><span class="paper-meta">Yiding Yu, Soung Chang Liew, <strong>Taotao Wang</strong>. <strong>IEEE Transactions on Mobile Computing</strong>, Vol. 20, No. 9, pp. 2848-2861, Sept. 2021. [CCF-A]</span></li>
+        <li><span class="paper-title">Ethna: Analyzing the Underlying Peer-to-Peer Network of Ethereum Blockchain</span><span class="paper-meta"><strong>Taotao Wang</strong>, Chonghe Zhao, Qing Yang, Shengli Zhang, Soung Chang Liew. <strong>IEEE Transactions on Network Science and Engineering</strong>, Vol. 8, No. 3, pp. 2131-2146, 2021. [CAS Q2]</span></li>
+        <li><span class="paper-title">Blockchain-based Decentralized Energy Management Platform for Residential Distributed Energy Resources in a Virtual Power Plant</span><span class="paper-meta">Qing Yang, Hao Wang, <strong>Taotao Wang</strong>, Shengli Zhang, Xiaoxiao Wu, Hui Wang. <strong>Applied Energy</strong>, Vol. 294, 2021. [CAS Q1]</span></li>
+        <li><span class="paper-title">When Blockchain Meets AI: Optimal Mining Strategy Achieved By Machine Learning</span><span class="paper-meta"><strong>Taotao Wang</strong>, Soung Chang Liew, Shengli Zhang. <strong>International Journal of Intelligent Systems</strong>, Vol. 36, No. 5, pp. 2183-2207, May 2021. [CAS Q1 Top]</span></li>
+        <li><span class="paper-title">Chapter 2: Consensus Algorithm Analysis in Blockchain: PoW and Raft</span><span class="paper-meta"><strong>Taotao Wang</strong>, Dongyan Huang, Shengli Zhang. <strong>Handbook of Wireless Blockchain: Principles, Technologies and Applications</strong>, Wiley-IEEE, 2021.</span></li>
+        <li><span class="paper-title">Optimal Rate-Diverse Wireless Network Coding Over Parallel Subchannels</span><span class="paper-meta"><strong>Taotao Wang</strong>, Soung Chang Liew, Shakeel Salamat Ullah. <strong>IEEE Transactions on Communications</strong>, Vol. 68, No. 8, pp. 4891-4904, Aug. 2020. [CAS Q2]</span></li>
+        <li><span class="paper-title">Deep Learning for Environment Identification in Vehicular Networks</span><span class="paper-meta">Mohamed Elwekeil, <strong>Taotao Wang*</strong>, Shengli Zhang. <strong>IEEE Wireless Communications Letters</strong>, Vol. 9, No. 5, pp. 576-580, May 2020. [CAS Q2]</span></li>
+        <li><span class="paper-title">Non-Coherent NOMA With Massive MIMO</span><span class="paper-meta"><strong>Taotao Wang</strong>, Long Shi, Kui Cai, Lining Tian, Shengli Zhang. <strong>IEEE Wireless Communications Letters</strong>, Vol. 9, No. 2, pp. 134-138, Feb. 2020. [CAS Q2]</span></li>
+        <li><span class="paper-title">AlphaSeq: Sequence Discovery with Deep Reinforcement Learning</span><span class="paper-meta">Yulin Shao, Soung Chang Liew, <strong>Taotao Wang</strong>. <strong>IEEE Transactions on Neural Networks and Learning Systems</strong>, Oct. 2019. [CAS Q1 Top]</span></li>
+        <li><span class="paper-title">Deep-Reinforcement Learning Multiple Access for Heterogeneous Wireless Networks</span><span class="paper-meta">Yiding Yu, <strong>Taotao Wang</strong>, Soung Chang Liew. <strong>IEEE Journal on Selected Areas in Communications</strong>, Vol. 34, No. 6, pp. 1277-1290, Jun. 2019. [CAS Q1 Top]</span></li>
+        <li><span class="paper-title">Deep Convolutional Neural Networks for Link Adaptations in MIMO-OFDM Wireless Systems</span><span class="paper-meta">Mohamed Elwekeil, Shibao Jiang, <strong>Taotao Wang*</strong>, Shengli Zhang. <strong>IEEE Wireless Communications Letters</strong>, Vol. 8, No. 4, pp. 665-668, Jun. 2019. [CAS Q2]</span></li>
+        <li><span class="paper-title">Gaussian Mixture Message Passing for Blind Known Interference Cancellation</span><span class="paper-meta"><strong>Taotao Wang</strong>, Long Shi, Shengli Zhang, Hui Wang. <strong>IEEE Transactions on Wireless Communications</strong>, Vol. 18, No. 9, pp. 4268-4282, Jun. 2019. [CAS Q1 Top]</span></li>
+        <li><span class="paper-title">ON-OFF Analog Beamforming for Massive MIMO</span><span class="paper-meta">Shengli Zhang, Chongtao Guo, <strong>Taotao Wang*</strong>, Wei Zhang. <strong>IEEE Transactions on Vehicular Technology</strong>, Vol. 67, No. 5, pp. 4113-4123, May 2018. [CAS Q2]</span></li>
+        <li><span class="paper-title">DCAP: Improving the Capacity of WiFi Networks with Distributed Cooperative Access Points</span><span class="paper-meta"><strong>Taotao Wang</strong>, Qing Yang, Kun Tan, Jiansong Zhang, Shengli Zhang, Soung Chang Liew. <strong>IEEE Transactions on Mobile Computing</strong>, Vol. 17, No. 2, pp. 320-333, Feb. 2018. [CCF-A]</span></li>
+        <li><span class="paper-title">Design of Distributed Protograph LDPC Codes for Multi-Relay Coded-Cooperative Networks</span><span class="paper-meta">Yi Fang, Soung Chang Liew, <strong>Taotao Wang</strong>. <strong>IEEE Transactions on Wireless Communications</strong>, Vol. 16, No. 11, pp. 7235-7251, Nov. 2017. [CAS Q1 Top]</span></li>
+        <li><span class="paper-title">Optimal Rate-Diverse Wireless Network Coding</span><span class="paper-meta"><strong>Taotao Wang*</strong>, Soung Chang Liew, Long Shi. <strong>IEEE Transactions on Communications</strong>, Vol. 65, No. 6, pp. 2411-2426, Jun. 2017. [CAS Q2]</span></li>
+        <li><span class="paper-title">Joint Multiple Symbol Differential Detection and Channel Decoding for Noncoherent UWB Impulse Radio by Belief Propagation</span><span class="paper-meta"><strong>Taotao Wang</strong>, Tiejun Lv, Hui Gao, Shengli Zhang. <strong>IEEE Transactions on Wireless Communications</strong>, Vol. 16, No. 1, pp. 293-306, Jan. 2017. [CAS Q1 Top]</span></li>
+        <li><span class="paper-title">Frequency-Asynchronous Multiuser Joint Channel-Parameter Estimation, CFO Compensation and Channel Decoding</span><span class="paper-meta"><strong>Taotao Wang*</strong>, Soung Chang Liew. <strong>IEEE Transactions on Vehicular Technology</strong>, Vol. 65, No. 12, pp. 9732-9746, Dec. 2016. [CAS Q2]</span></li>
+        <li><span class="paper-title">Joint Channel Estimation and Channel Decoding in Physical-Layer Network Coding Systems: An EM-BP Factor Graph Framework</span><span class="paper-meta"><strong>Taotao Wang*</strong>, Soung Chang Liew. <strong>IEEE Transactions on Wireless Communications</strong>, Vol. 13, No. 4, pp. 2229-2245, Apr. 2014. [CAS Q1 Top]</span></li>
+        <li><span class="paper-title">BER Analysis of Decision-Feedback Multiple Symbol Detection in Noncoherent MIMO Ultra-Wideband Systems</span><span class="paper-meta"><strong>Taotao Wang*</strong>, Tiejun Lv, Hui Gao, Yueming Lu. <strong>IEEE Transactions on Vehicular Technology</strong>, Vol. 62, No. 9, pp. 4684-4690, Jun. 2013. [CAS Q2]</span></li>
+        <li><span class="paper-title">Implementation of Physical-Layer Network Coding</span><span class="paper-meta">Lu Lu, <strong>Taotao Wang</strong>, Soung Chang Liew, Shengli Zhang. <strong>Physical Communication</strong>, Vol. 6, pp. 74-87, Mar. 2013. [CAS Q4]</span></li>
+        <li><span class="paper-title">Decision-feedback Multiple Symbol Detection for Differential Space-time Block Coded UWB Systems</span><span class="paper-meta">Tiejun Lv, <strong>Taotao Wang</strong>, Hui Gao. <strong>Science China Information Sciences</strong>, 56(4), 2013. [CAS Q2]</span></li>
+        <li><span class="paper-title">Sphere Decoding Based Multiple Symbol Detection for Differential Space-Time Block Coded Ultra-Wideband Systems</span><span class="paper-meta"><strong>Taotao Wang*</strong>, Tiejun Lv, Hui Gao. <strong>IEEE Communications Letters</strong>, Vol. 15, No. 3, pp. 269-271, Mar. 2011. [CAS Q3]</span></li>
+        <li><span class="paper-title">Canceling Interferences for High Data Rate Time Reversal MIMO UWB system: A Precoding Approach</span><span class="paper-meta"><strong>Taotao Wang*</strong>, Tiejun Lv. <strong>EURASIP Journal on Wireless Communications and Networking</strong>, Vol. 2011, pp. 1-10, 2011. [CAS Q4]</span></li>
+      </ol>
+    </section>
+
+    <section id="funding">
+      <div class="section-head">
+        <div>
+          <h2>主持项目</h2>
+          <p>以项目负责人身份承担的部分代表性课题，涵盖国家、省市级纵向项目及企业、机构合作项目。</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>纵向项目（国家/省/市级）</h3>
+          <ul class="list">
+            <li>国家自然科学基金面上项目：面向区块链的大规模 P2P 网络测量、建模分析与拓扑优化。</li>
+            <li>深圳市科技计划深港联合创新项目：高性能物联网中的多流超可靠组网与实时通信技术。</li>
+            <li>广东省自然科学基金面上项目：区块链 P2P 网络中的高速消息传播技术。</li>
+            <li>深圳市科技计划面上项目：基于分布式多智能体深度强化学习的自适应频谱接入技术。</li>
+            <li>深圳市科技计划面上项目：高可靠异构自组织无人机蜂群网络的通信与组网技术。</li>
+            <li>广东省自然科学基金面上项目：基于深度强化学习的智能无线网络 MAC 协议。</li>
+            <li>国家自然科学基金青年项目：物理层网络编码中的迭代信道失配校正与目标信号译码。</li>
+            <li>深圳市自由探索项目：物理层网络编码在智能电网中的应用。</li>
+            <li>广东省自然科学基金博士启动项目：物理层网络编码中的联合多参数估计、补偿与信道译码。</li>
+            <li>深圳市海外高层次人才科研启动项目。</li>
+            <li>深圳大学理工科基础科研基金。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>横向项目（企业/机构合作）</h3>
+          <ul class="list">
+            <li>CCF-之江实验室联合创新基金：作为去中心化联邦学习规则引擎的区块链系统设计与实现。</li>
+            <li>腾讯“犀牛鸟”基金：具有高速数据转发能力的区块链网络结构与通信协议研究。</li>
+            <li>企业合作项目：基于生成式 AI 的广告文案自动设计系统。</li>
+            <li>企业合作项目：基于 AI 与大数据的电梯健康评估与故障预警技术。</li>
+            <li>中国空间技术研究院（CAST）合作项目：天基智能弹性组网与可信控制机制。</li>
+            <li>华为技术合作项目：信道接入算法优化与协议设计。</li>
+            <li>企业合作项目（北京元素征信）：大数据区块链技术研发。</li>
+            <li>钱学森实验室合作项目：频谱协同仿真系统与 SDR 软件开发。</li>
+            <li>企业合作项目：知识产权存证平台区块链系统开发。</li>
+            <li>企业合作项目：实体资产数字代币化技术方案研究。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="awards">
+      <div class="section-head">
+        <div>
+          <h2>奖励与荣誉</h2>
+          <p>部分代表性荣誉，涵盖科研成果、人才培养、学术服务与创新竞赛等方面。</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <ul class="list">
+            <li>2023 香港 Web 3.0 Innovation Hackathon 银奖</li>
+            <li>2023 ScalingX Zero-Knowledge Hackathon 优胜奖</li>
+            <li>IEEE CPSCOM 2021 最佳论文奖（亚军）</li>
+            <li>IEEE CPSCOM 2021 最佳学生论文奖</li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul class="list">
+            <li>IEEE Wireless Communications Letters 优秀审稿人奖</li>
+            <li>微软亚洲研究院“明日之星”（Star of Tomorrow）</li>
+            <li>香港博士奖学金计划（Hong Kong Ph.D. Fellowship Scheme）</li>
+            <li>深圳市海外高层次人才（孔雀计划）</li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul class="list">
+            <li>北京邮电大学优秀硕士学位论文奖</li>
+            <li>北京邮电大学优秀毕业生</li>
+            <li>电子科技大学优秀本科毕业生</li>
+            <li>DARPA Spectrum Collaboration Challenge 决赛队伍成员</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="service">
+      <div class="section-head">
+        <div>
+          <h2>学术服务</h2>
+          <p>包括期刊编辑、会议组织与程序委员会服务，以及网络通信、人工智能与系统领域的重要期刊与会议审稿工作。</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>编辑与会议服务</h3>
+          <ul class="list">
+            <li><span class="service-role">程序委员会委员</span>，ACM WWW</li>
+            <li><span class="service-role">程序委员会委员</span>，IEEE CIC ICC 2019</li>
+            <li><span class="service-role">程序委员会委员</span>，IEEE ICCC 2020</li>
+            <li><span class="service-role">专题主席</span>，IEEE WOCC 2022</li>
+            <li><span class="service-role">研讨会联合主席</span>，IEEE TrustCom 2025</li>
+            <li><span class="service-role">副编辑</span>，Scientific Reports</li>
+            <li><span class="service-role">副编辑</span>，IEEE TENCON 2020</li>
+            <li><span class="service-role">审稿编辑</span>，Frontiers in Communications and Networks</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>期刊与会议审稿</h3>
+          <ul class="split-list">
+            <li>AAAI Conference on Artificial Intelligence</li>
+            <li>IEEE Journal on Selected Areas in Communications</li>
+            <li>IEEE/ACM Transactions on Networking</li>
+            <li>IEEE Transactions on Information Forensics and Security</li>
+            <li>IEEE Transactions on Wireless Communications</li>
+            <li>IEEE Transactions on Mobile Computing</li>
+            <li>IEEE Transactions on Communications</li>
+            <li>IEEE Transactions on Network Science and Engineering</li>
+            <li>IEEE Transactions on Vehicular Technology</li>
+            <li>IEEE Wireless Communications Letters</li>
+            <li>IEEE Signal Processing Letters</li>
+            <li>IEEE Transactions on Neural Networks and Learning Systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>访客地图</h3>
+      <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&amp;w=600&amp;t=tt&amp;d=EpElN2u0P2qchqohBMQVED5oPkycDlpVLhVR7cVYQFU&amp;co=2d78ad&amp;ct=ffffff&amp;cmo=3acc3a&amp;cmn=ff5353"></script>
+    </section>
+
+    <footer class="footer">
+      <span>最近更新：2026 年 4 月</span>
+      <span>王滔滔，深圳大学</span>
+      <a href="#top">回到顶部</a>
+    </footer>
+  </main>
+</body>
+</html>
+
