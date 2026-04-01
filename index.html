@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Taotao Wang is an Associate Professor at Shenzhen University working on networked and distributed systems for trustworthy intelligence.">
-<meta name="keywords" content="Taotao Wang, Shenzhen University, blockchain, trustworthy AI, wireless networking, distributed systems, Web 3.0">
+<meta name="description" content="Taotao Wang is an Associate Professor at Shenzhen University working on networked systems for trustworthy intelligence.">
+<meta name="keywords" content="Taotao Wang, Shenzhen University, blockchain, trustworthy AI, networked systems, wireless networking, Web 3.0">
 <title>Taotao Wang | Shenzhen University</title>
 <style>
   :root{
@@ -38,12 +38,13 @@
   }
   .container,.topbar-inner{width:min(1180px, calc(100% - 32px));margin:0 auto;position:relative;z-index:1}
   .topbar-inner{
-    display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:72px
+    display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px
   }
-  .brand{display:flex;flex-direction:column;gap:2px}
+  .brand{display:flex;flex-direction:column;gap:2px;min-width:0}
   .brand strong{font-size:1rem;letter-spacing:.08em;text-transform:uppercase}
-  .brand span{font-size:.92rem;color:var(--muted)}
-  .nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:18px;font-size:.96rem}
+  .brand span{font-size:.86rem;color:var(--muted);white-space:nowrap}
+  .nav{display:flex;flex-wrap:nowrap;justify-content:flex-end;gap:14px;font-size:.92rem}
+  .nav a{white-space:nowrap}
   .nav a{color:var(--text);opacity:.88}
   .nav a:hover{text-decoration:none;color:var(--accent)}
   main{padding:28px 0 72px}
@@ -233,13 +234,13 @@
     <div class="topbar-inner">
       <div class="brand">
         <strong>Taotao Wang</strong>
-        <span>Shenzhen University | Networked Systems, AI, Blockchain</span>
+        <span>Shenzhen University | Blockchain, Trustworthy Intelligence &amp; Networked Systems</span>
       </div>
       <nav class="nav">
         <a href="#about">AboutMe</a>
         <a href="#research">Research</a>
         <a href="#positions">OpenPositions</a>
-        <a href="#news">Highlights</a>
+        <a href="#news">Updates</a>
         <a href="#publications">Publications</a>
         <a href="#funding">Funding</a>
         <a href="#awards">Awards</a>
@@ -255,9 +256,9 @@
         <div class="eyebrow"><span class="text-accent-role">Associate Professor</span> Shenzhen University</div>
         <h1>Taotao Wang</h1>
         <img class="hero-name-image" src="chinese_name.png" alt="Chinese name of Taotao Wang">
-        <p class="subtitle">Networked and Distributed Systems for Trustworthy Intelligence</p>
+        <p class="subtitle">Networked Systems for Trustworthy Intelligence</p>
         <p class="lead">
-          I work at the intersection of networking, distributed systems, AI, and cryptographic security. My research focuses on how large-scale networked systems can become more efficient, decentralized, and trustworthy, with current interests in blockchain and Web 3.0 infrastructure, trustworthy and verifiable AI, and intelligent wireless and edge networking.
+          My research lies at the intersection of networking, AI, and cryptographic security. Centered on decentralized systems, trustworthy AI, and cryptographic security mechanisms, I study networked systems for next-generation information infrastructures. My current interests include blockchain and Web 3.0 infrastructure, trustworthy and verifiable AI, and agentic networks and intelligent wireless networking.
         </p>
         <div class="meta-line meta-line-emphasis">Associate Professor, Shenzhen University | Stanford-Elsevier Top 2% Scientist | Ph.D. in Information Engineering, CUHK</div>
         <div class="contact-row">
@@ -289,18 +290,17 @@
       <div class="section-head">
         <div>
           <h2>About Me</h2>
-          <p>A systems-oriented research profile centered on decentralized systems, trustworthy AI, and cryptographic mechanisms, grounded in networked systems for next-generation infrastructures.</p>
         </div>
       </div>
       <div class="card">
         <p>
-          I received my Ph.D. in Information Engineering from The Chinese University of Hong Kong in 2015, advised by Prof. Soung-Chang Liew. Before that, I earned my M.S. degree from Beijing University of Posts and Telecommunications in 2011 and my B.S. degree from the University of Electronic Science and Technology of China in 2008.
+          I received my Ph.D. in Information Engineering from The Chinese University of Hong Kong in 2015, advised by Prof. Soung-Chang Liew. Before that, I earned my M.S. degree from Beijing University of Posts and Telecommunications in 2011 and my B.S. degree in Electronic Information Engineering from the University of Electronic Science and Technology of China in 2008.
         </p>
         <p>
           From 2015 to 2016, I was a postdoctoral research fellow at the Institute of Network Coding of CUHK. I joined Shenzhen University in 2016, and I am currently an Associate Professor in the College of Electronics and Information Engineering. I am also affiliated with the Guangdong Provincial Social Science Research Base for FinTech and Digital Economy.
         </p>
         <p>
-          My long-term goal is to design new systems rather than study isolated algorithms. Across my work, the recurring theme is to combine communication and networking principles, AI-driven decision making, and cryptographic trust mechanisms to build systems that can operate reliably in open, dynamic, and decentralized environments.
+          My long-term goal is to design new systems for next-generation information infrastructures rather than study isolated algorithms. Across my work, the recurring theme is to conduct research on the design, implementation, and optimization of systems for next-generation information infrastructures, centered on decentralized systems, trustworthy AI, and cryptographic security mechanisms.
         </p>
       </div>
     </section>
@@ -309,9 +309,6 @@
       <div class="section-head">
         <div>
           <h2>Research Focus</h2>
-          <p>
-            My research focuses on how networked systems can jointly achieve high performance, decentralized coordination, and trustworthy intelligence. I combine networking and distributed systems, machine learning, and cryptographic security techniques to study modeling, protocol design, optimization, and prototype implementation.
-          </p>
         </div>
       </div>
       <div class="research-grid">
@@ -343,7 +340,6 @@
       <div class="section-head">
         <div>
           <h2>Open Positions</h2>
-          <p>I welcome students and researchers who enjoy building real systems and tackling interdisciplinary problems across networking, AI, security, and decentralized infrastructures.</p>
         </div>
       </div>
       <div class="grid-2">
@@ -371,8 +367,7 @@
     <section id="news">
       <div class="section-head">
         <div>
-          <h2>Selected Highlights</h2>
-          <p>Recent milestones that best reflect the current trajectory of my group.</p>
+          <h2>Recent Updates</h2>
         </div>
       </div>
       <div class="card">
@@ -390,7 +385,6 @@
       <div class="section-head">
         <div>
           <h2>Selected Publications</h2>
-          <p>Representative papers listed in reverse chronological order across blockchain and decentralized systems, trustworthy AI, and intelligent wireless networking.</p>
         </div>
       </div>
       <p class="pub-note">* Corresponding author. # Equally contributing authors.</p>
@@ -460,7 +454,6 @@
       <div class="section-head">
         <div>
           <h2>Funding</h2>
-          <p>Representative projects as principal investigator across government, academic, and industry collaborations.</p>
         </div>
       </div>
       <div class="grid-2">
@@ -501,7 +494,6 @@
       <div class="section-head">
         <div>
           <h2>Awards and Recognition</h2>
-          <p>Selected honors spanning research, student mentoring, reviewing, and innovation competitions.</p>
         </div>
       </div>
       <div class="grid-3">
@@ -536,7 +528,6 @@
       <div class="section-head">
         <div>
           <h2>Professional Activities</h2>
-          <p>Editorial service, technical program committees, and peer review for major journals and conferences in networking, communications, AI, and systems.</p>
         </div>
       </div>
       <div class="grid-2">
@@ -586,4 +577,3 @@
   </main>
 </body>
 </html>
-
