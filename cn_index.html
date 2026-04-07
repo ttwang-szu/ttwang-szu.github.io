@@ -36,16 +36,24 @@ a:hover{text-decoration:underline;text-underline-offset:3px}
 .hero-grid{display:grid;grid-template-columns:1fr 280px;gap:56px;align-items:start}
 .hero-label{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text2);margin-bottom:16px;font-weight:500}
 .hero h1{font-family:var(--serif);font-size:clamp(3rem,6.5vw,5rem);font-weight:400;line-height:1.05;letter-spacing:-.03em;margin-bottom:4px}
-.hero-cn{height:28px;width:auto;opacity:.35;margin-bottom:20px}
+.hero-name-row{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:20px}
+.hero-name-row h1{margin-bottom:0}
+.hero-cn{height:42px;width:auto;opacity:.95;margin:0 0 12px 12px}
 .hero-sub{font-family:var(--serif-cn);font-size:clamp(1.1rem,1.8vw,1.3rem);color:var(--text2);margin-bottom:24px;line-height:1.5;font-weight:400}
 .hero-desc{font-size:.95rem;color:var(--text2);line-height:1.8;max-width:600px;margin-bottom:24px}
 .hero-meta{font-size:.85rem;color:var(--text2);line-height:1.9;margin-bottom:24px}
+.meta-line{color:var(--text2);font-size:.92rem;line-height:1.75}
+.meta-line-emphasis{color:var(--text);font-weight:500;letter-spacing:.01em}
 .hero-cta{display:flex;gap:24px}
 .hero-cta a{font-size:1.05rem;color:var(--accent);font-weight:500}
+.hero-aside{display:flex;flex-direction:column;align-items:center;gap:20px;width:100%}
+.hero-photo{width:100%}
 .hero-photo img{width:100%;border-radius:12px}
-.aff{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.aff{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .aff img{height:24px;width:auto;object-fit:contain;opacity:.85;transition:opacity .3s}
 .aff img:hover{opacity:1}
+.hero-aside .aff{display:grid;width:100%;grid-template-columns:repeat(4,minmax(0,1fr));align-items:end;justify-items:center;column-gap:4px;row-gap:0}
+.hero-aside .aff img{height:44px;max-width:100%}
 
 section{padding:72px 0;border-top:1px solid var(--border)}
 section:first-of-type{border-top:none}
@@ -60,7 +68,7 @@ section p+p{margin-top:14px}
 .sec-alt{background:var(--bg2);border-top:none;padding:72px 0}
 .research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
 .research-item{overflow:hidden}
-.research-item img{border-radius:10px;aspect-ratio:16/10;object-fit:cover;margin-bottom:20px;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+.research-item img{width:100%;border-radius:10px;aspect-ratio:16/10;object-fit:cover;margin-bottom:20px;transition:transform .5s cubic-bezier(.4,0,.2,1)}
 .research-item:hover img{transform:scale(1.03)}
 .research-item h3{font-family:var(--serif-cn);font-size:1.15rem;font-weight:500;margin-bottom:10px}
 .research-item p{font-size:.93rem;line-height:1.75}
@@ -112,13 +120,17 @@ footer a{color:var(--text2)}
 @media(max-width:768px){
   .hero{padding:56px 0 0}
   .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hero-name-row{gap:12px}
+  .hero-cn{height:36px;margin:0 0 8px 8px}
+  .hero-aside{gap:16px}
   .hero-photo{max-width:220px;margin:0 auto}
   .research-grid{grid-template-columns:1fr}
   .pos-grid,.col2{grid-template-columns:1fr;gap:28px}
   .awards-grid{grid-template-columns:1fr}
   section{padding:48px 0}
   .sec-alt{padding:48px 0}
-  .aff{flex-wrap:wrap;gap:24px}
+  .hero-aside .aff{column-gap:6px}
+  .hero-aside .aff img{height:34px}
   .footer-in{flex-direction:column;gap:8px;text-align:center}
   .topnav-links{gap:12px;flex-wrap:wrap}
   .topnav-links a{font-size:.78rem}
@@ -153,19 +165,15 @@ footer a{color:var(--text2)}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="hero-label fi">深圳大学 &middot; 副教授</p>
-        <div class="aff fi" style="transition-delay:.03s">
-          <img src="szulogo.gif" alt="深圳大学">
-          <img src="cuhk_logo.png" alt="香港中文大学">
-          <img src="bupt_logo.png" alt="北京邮电大学">
-          <img src="uestc_logo.jpg" alt="电子科技大学">
+        <p class="hero-label fi">深圳大学 &middot; 副教授 &middot; 博导</p>
+        <div class="hero-name-row">
+          <h1 class="fi" style="transition-delay:.05s">Taotao Wang</h1>
+          <img class="hero-cn fi" src="chinese_name.png" alt="王滔滔" style="transition-delay:.1s">
         </div>
-        <h1 class="fi" style="transition-delay:.05s">Taotao Wang</h1>
-        <img class="hero-cn fi" src="chinese_name.png" alt="王滔滔" style="transition-delay:.1s">
         <p class="hero-sub fi" style="transition-delay:.15s">面向可信智能的网络与去中心化系统</p>
         <p class="hero-desc fi" style="transition-delay:.2s">我的研究位于网络通信、人工智能与密码安全的交叉地带，围绕网络与去中心化系统中的体系结构、协议与信任机制，依托网络化系统方法，面向下一代信息基础设施开展系统研究。当前重点包括区块链与 Web 3.0 基础设施、可信与可验证人工智能，以及智能体网络与智能无线网络。</p>
         <div class="hero-meta fi" style="transition-delay:.25s">
-          <p>斯坦福-爱思唯尔全球前2%高被引科学家 &middot; 香港中文大学信息工程博士</p>
+          <div class="meta-line meta-line-emphasis">深圳大学副教授 | 斯坦福-爱思唯尔全球前2%高被引科学家 | 香港中文大学信息工程博士</div>
           <p>邮箱: ttwang<span style="font-size:0;opacity:0;position:absolute;">[nospam]</span>@szu.edu.cn &middot; 备用: postman511<span style="font-size:0;opacity:0;position:absolute;">[nospam]</span>@gmail.com</p>
         </div>
         <div class="hero-cta fi" style="transition-delay:.3s">
@@ -173,8 +181,16 @@ footer a{color:var(--text2)}
           <a href="#positions">加入团队 &rarr;</a>
         </div>
       </div>
-      <div class="hero-photo fi" style="transition-delay:.2s">
-        <img src="Photo_Taotao_Wang1.jpg" alt="王滔滔照片">
+      <div class="hero-aside">
+        <div class="hero-photo fi" style="transition-delay:.2s">
+          <img src="Photo_Taotao_Wang1.jpg" alt="王滔滔照片">
+        </div>
+        <div class="aff fi" style="transition-delay:.25s">
+          <img src="szulogo.gif" alt="深圳大学">
+          <img src="cuhk_logo.png" alt="香港中文大学">
+          <img src="bupt_logo.png" alt="北京邮电大学">
+          <img src="uestc_logo.jpg" alt="电子科技大学">
+        </div>
       </div>
     </div>
 
