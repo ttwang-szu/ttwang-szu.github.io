@@ -67,7 +67,7 @@ section p+p{margin-top:14px}
 
 .sec-alt{background:var(--bg2);border-top:none;padding:72px 0}
 .research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
-.research-item{overflow:hidden}
+.research-item{overflow:hidden;display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0}
 .research-item img{width:100%;border-radius:10px;aspect-ratio:16/10;object-fit:cover;margin-bottom:20px;transition:transform .5s cubic-bezier(.4,0,.2,1)}
 .research-item:hover img{transform:scale(1.03)}
 .research-item h3{font-family:var(--serif);font-size:1.3rem;font-weight:400;margin-bottom:10px}
