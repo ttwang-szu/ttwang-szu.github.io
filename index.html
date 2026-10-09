@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Taotao Wang is an Associate Professor at Shenzhen University working on open networks and systems for trustworthy intelligence.">
-<meta name="keywords" content="Taotao Wang, Shenzhen University, open networks and systems, trustworthy intelligence, blockchain, Web 3.0 infrastructure, trustworthy AI, verifiable AI, multi-agent systems, intelligent network systems">
+<meta name="description" content="Taotao Wang is an Associate Professor at Shenzhen University working on open networks and systems for trustworthy intelligence, including trustworthy and verifiable AI, agentic networks, and blockchain and decentralized systems.">
+<meta name="keywords" content="Taotao Wang, Shenzhen University, trustworthy AI, verifiable AI, zero-knowledge proofs, agentic networks, multi-agent systems, blockchain, Web 3.0, decentralized systems">
 <title>Taotao Wang | Shenzhen University</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,7 +66,7 @@ section p+p{margin-top:14px}
 .about-text p{font-size:.98rem;line-height:1.8}
 
 .sec-alt{background:var(--bg2);border-top:none;padding:72px 0}
-.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+.research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
 .research-item{overflow:hidden}
 .research-item img{width:100%;border-radius:10px;aspect-ratio:16/10;object-fit:cover;margin-bottom:20px;transition:transform .5s cubic-bezier(.4,0,.2,1)}
 .research-item:hover img{transform:scale(1.03)}
@@ -139,8 +139,9 @@ footer a{color:var(--text2)}
 }
 @media(max-width:480px){
   .wrap{padding:0 16px}
-  .topnav-in{padding:0 16px}
-  .topnav-links{gap:8px}
+  .topnav-in{padding:10px 16px;flex-direction:column;align-items:flex-start;gap:6px}
+  .topnav-links{width:100%;gap:6px 12px}
+  .hero-grid>*{min-width:0}
 }
 </style>
 </head>
@@ -173,7 +174,7 @@ footer a{color:var(--text2)}
           <img class="hero-cn fi" src="chinese_name.png" alt="Chinese name" style="transition-delay:.1s">
         </div>
         <p class="hero-sub fi" style="transition-delay:.15s">Open Networks and Systems for Trustworthy Intelligence</p>
-        <p class="hero-desc fi" style="transition-delay:.2s">My research sits at the intersection of networking, artificial intelligence, and cryptographic security. I study architectures, protocols, and trust mechanisms for open networks and systems, with a focus on efficient communication, trustworthy coordination, and verifiable computation. My current interests include blockchain and Web 3.0 infrastructure, trustworthy and verifiable AI, and multi-agent coordination in intelligent network systems.</p>
+        <p class="hero-desc fi" style="transition-delay:.2s">My research sits at the intersection of networking, artificial intelligence, and cryptographic security. Intelligent services, from AI agents to collaborative learning, increasingly run on open networks and systems, where participants cannot simply trust one another. This leads to three lines of research: how intelligent computation can be made trustworthy and verifiable with tools such as zero-knowledge proofs, how AI agents can coordinate over networks, and how decentralized systems such as blockchains can operate efficiently and at scale without centralized trust.</p>
         <div class="hero-meta fi" style="transition-delay:.25s">
           <div class="meta-line meta-line-emphasis">Associate Professor, Shenzhen University | Stanford-Elsevier Top 2% Scientist | Ph.D. in Information Engineering, CUHK</div>
           <p>Email: ttwang<span style="font-size:0;opacity:0;position:absolute;">[nospam]</span>@szu.edu.cn &middot; Alt: postman511<span style="font-size:0;opacity:0;position:absolute;">[nospam]</span>@gmail.com</p>
@@ -205,7 +206,7 @@ footer a{color:var(--text2)}
     <div class="about-text fi">
       <p>I received my Ph.D. in Information Engineering from The Chinese University of Hong Kong in 2015, advised by Prof. Soung-Chang Liew. Before that, I earned my M.S. degree from Beijing University of Posts and Telecommunications in 2011 and my B.S. degree in Electronic Information Engineering from the University of Electronic Science and Technology of China in 2008.</p>
       <p>From 2015 to 2016, I was a postdoctoral research fellow at the Institute of Network Coding of CUHK. I joined Shenzhen University in 2016, and I am currently an Associate Professor in the College of Electronics and Information Engineering. I am also affiliated with the Guangdong Provincial Social Science Research Base for FinTech and Digital Economy.</p>
-      <p>My long-term goal is to design new systems for next-generation information infrastructures rather than focus on isolated algorithms. Across these efforts, a recurring theme is open networks and systems for trustworthy intelligence: I study how architectures, protocols, and trust mechanisms can support efficient communication, trustworthy coordination, and verifiable computation in open environments, together with the design, implementation, and optimization of practical systems.</p>
+      <p>My long-term goal is to build working systems rather than study isolated algorithms. My research began in wireless networking: during my Ph.D. at CUHK, I worked on physical-layer network coding and later on learning-based multiple access. It then extended to blockchain and decentralized networks, and now focuses on where open networks meet AI: how intelligent participants coordinate, and how their computation can be verified.</p>
     </div>
   </div>
 </section>
@@ -215,19 +216,19 @@ footer a{color:var(--text2)}
     <h2 class="fi">Research Focus</h2>
     <div class="research-grid stg">
       <div class="research-item fi">
-        <img src="web3.jpg" alt="Blockchain and Web 3.0 infrastructure" loading="lazy">
-        <h3>Blockchain and Web 3.0 Infrastructure</h3>
-        <p>I study architectures, protocol design, and performance optimization for blockchain and Web 3.0 infrastructure in open networks, with the goal of enabling secure, scalable, and efficient identity management, collaborative services, value exchange, and data sharing without centralized trust.</p>
+        <img src="research-trustworthy-ai.jpg" alt="Trustworthy and verifiable AI computation" loading="lazy">
+        <h3>Trustworthy and Verifiable AI Computation</h3>
+        <p>This direction studies how AI models and agents can be made trustworthy and verifiable, from model training, fine-tuning, and inference to the decisions and actions agents take. Topics include zero-knowledge proofs, privacy-preserving computation, verifiable machine learning, and verifiable agent execution, with particular attention to the trade-off between rigorous guarantees and system performance.</p>
       </div>
       <div class="research-item fi">
-        <img src="Trustworthy-AI.png" alt="Trustworthy and verifiable AI" loading="lazy">
-        <h3>Trustworthy and Verifiable AI</h3>
-        <p>I study how to make AI systems trustworthy, verifiable, and accountable in open collaborative environments, with particular interest in privacy-preserving learning, model verification, zero-knowledge proofs, and secure coordination mechanisms that can support reliable intelligent services.</p>
+        <img src="research-agentic-networks.jpg" alt="Agentic networks and multi-agent coordination" loading="lazy">
+        <h3>Agentic Networks and Multi-Agent Coordination</h3>
+        <p>This direction studies how agents discover one another, share capabilities, and make decisions together over networks. Topics include agentic P2P networks, coordination mechanisms for LLM multi-agent systems, and agent-driven network optimization, with particular attention to the trade-off between collaboration gains and communication overhead.</p>
       </div>
       <div class="research-item fi">
-        <img src="Wireless_Communication_Networks.jpg" alt="Multi-agent coordination and intelligent network systems" loading="lazy">
-        <h3>Multi-Agent Coordination and Intelligent Network Systems</h3>
-        <p>I study coordination mechanisms for multi-agent and intelligent network systems in open and dynamic environments, and how sensing, decision-making, interaction, and adaptive optimization can improve system efficiency, robustness, and autonomy for real-time, trustworthy intelligent services.</p>
+        <img src="research-web3.jpg" alt="Blockchain and decentralized systems" loading="lazy">
+        <h3>Blockchain and Decentralized Systems</h3>
+        <p>This direction studies how blockchain and decentralized systems can operate efficiently and at scale without centralized trust. Topics include blockchain network protocols, decentralized identity, and Web 3.0 application systems, with particular attention to the trade-off between decentralization and system performance.</p>
       </div>
     </div>
   </div>
@@ -240,9 +241,9 @@ footer a{color:var(--text2)}
       <div>
         <h3>Who I am looking for</h3>
         <ul>
-          <li><span class="kw">Ph.D. students</span> interested in blockchain/Web 3.0 infrastructure, trustworthy and verifiable AI, open networks and systems, or intelligent network systems.</li>
+          <li><span class="kw">Ph.D. students</span> interested in any of my three directions: trustworthy and verifiable AI computation, agentic networks and multi-agent coordination, or blockchain and decentralized systems.</li>
           <li><span class="kw">M.S. students</span> who want project-based research training with strong implementation components.</li>
-          <li><span class="kw">Postdoctoral researchers</span> working on blockchain and open network systems, LLM and AI multi-agent systems, or trustworthy and verifiable machine learning.</li>
+          <li><span class="kw">Postdoctoral researchers</span> with a strong record in zero-knowledge proofs and verifiable machine learning, LLM multi-agent systems, or blockchain and decentralized systems.</li>
           <li><span class="kw">Undergraduate research interns</span> with clear logical thinking, strong hands-on ability, and self-motivation.</li>
         </ul>
       </div>
@@ -251,7 +252,7 @@ footer a{color:var(--text2)}
         <ul>
           <li>End-to-end research training from problem formulation to system design, implementation, experiments, and paper writing.</li>
           <li>Hands-on work on protocol design, system prototyping, AI for systems, privacy and security mechanisms, and real-world applications.</li>
-          <li>Opportunities to contribute to active projects in blockchain/Web 3.0, trustworthy and verifiable AI, LLM multi-agent systems, intelligent network systems, and edge networking.</li>
+          <li>Opportunities to contribute to active projects in all three directions, including zero-knowledge verifiable AI, LLM multi-agent systems, and blockchain/Web 3.0 systems.</li>
           <li>If you are interested, please email your CV, transcript, and a short note on your research interests.</li>
         </ul>
       </div>
@@ -279,6 +280,7 @@ footer a{color:var(--text2)}
     <h2 class="fi">Selected Publications</h2>
     <p class="pub-note fi">* Corresponding author. # Equally contributing authors.</p>
     <ol class="pub-list fi">
+      <li><span class="pt">ZKEnroll: Privacy-Preserving Batch Enrollment for IoT Devices via Recursive Proof Aggregation</span><span class="pm">Zibin Lin, <strong>Taotao Wang*</strong>, Shengli Zhang, Long Shi, Boris D&uuml;dder. <strong>IEEE Internet of Things Journal</strong>, Early Access, 2026.</span></li>
       <li><span class="pt">BioZKFHE: Scalable Encrypted Biometric Identification via Verifiable Homomorphic Similarity Evaluation</span><span class="pm">Rundong Xin, <strong>Taotao Wang*</strong>, Xiaoxiao Wu, Weizhi Meng, Shengli Zhang, Shui Yu. <strong>IEEE Transactions on Dependable and Secure Computing</strong>, Early Access, 2026.</span></li>
       <li><span class="pt">U-DID: A Self-Sovereign Identity Based Trustworthiness for Multimedia in 6G</span><span class="pm">Haoyang Li, Bin Cao, Mingrui Cao, Mingtao Deng, <strong>Taotao Wang</strong>. <strong>IEEE Transactions on Multimedia</strong>, Early Access, 2026.</span></li>
       <li><span class="pt">An LLM-Agent-Based Framework for Age of Information Optimization in Heterogeneous Multiple Access Networks</span><span class="pm">Fang Liu, Erchao Zhu, Jiedan Tan, Jingwen Tong, <strong>Taotao Wang*</strong>, Shengli Zhang. <strong>IEEE Open Journal of the Communications Society</strong>, Early Access, 2026.</span></li>
@@ -419,6 +421,7 @@ footer a{color:var(--text2)}
         <h3>Editor and TPC Member</h3>
         <ul>
           <li><span class="sr">TPC Member</span>, ACM WWW</li>
+          <li><span class="sr">Program Committee</span>, 9th, 11th, and 12th–14th International Workshops on Distributed Storage and Blockchain Technologies for Big Data</li>
           <li><span class="sr">TPC Member</span>, IEEE CIC ICC 2019</li>
           <li><span class="sr">TPC Member</span>, IEEE ICCC 2020</li>
           <li><span class="sr">Symposia Chair</span>, IEEE WOCC 2022</li>
@@ -432,9 +435,11 @@ footer a{color:var(--text2)}
         <h3>Reviewer</h3>
         <ul>
           <li>AAAI Conference on Artificial Intelligence</li>
-          <li>IEEE Journal on Selected Areas in Communications</li>
-          <li>IEEE/ACM Transactions on Networking</li>
-          <li>IEEE Transactions on Information Forensics and Security</li>
+          <li>IEEE Transactions on Dependable and Secure Computing (TDSC)</li>
+          <li>IEEE Journal on Selected Areas in Communications (JSAC)</li>
+          <li>IEEE/ACM Transactions on Networking (TON/TNET)</li>
+          <li>IEEE Transactions on Information Forensics and Security (TIFS)</li>
+          <li>ACM Computing Surveys (ACM CSUR)</li>
           <li>IEEE Transactions on Wireless Communications</li>
           <li>IEEE Transactions on Mobile Computing</li>
           <li>IEEE Transactions on Communications</li>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="王滔滔，深圳大学副教授，主要研究可信智能与开放协同网络系统。">
-<meta name="keywords" content="王滔滔, Taotao Wang, 深圳大学, 可信智能, 开放协同网络系统, 区块链, Web 3.0, 可验证人工智能, 多智能体协同, 智能网络系统">
+<meta name="description" content="王滔滔，深圳大学副教授，研究面向可信智能的开放网络与系统，包括可信与可验证智能计算、智能体协同网络、区块链与去中心化系统。">
+<meta name="keywords" content="王滔滔, Taotao Wang, 深圳大学, 可信AI, 可验证智能计算, 零知识证明, 智能体协同网络, 多智能体系统, 区块链, Web 3.0, 去中心化系统">
 <title>王滔滔 | 深圳大学</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,7 +66,7 @@ section p+p{margin-top:14px}
 .about-text p{font-size:.98rem;line-height:1.85}
 
 .sec-alt{background:var(--bg2);border-top:none;padding:72px 0}
-.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+.research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
 .research-item{overflow:hidden}
 .research-item img{width:100%;border-radius:10px;aspect-ratio:16/10;object-fit:cover;margin-bottom:20px;transition:transform .5s cubic-bezier(.4,0,.2,1)}
 .research-item:hover img{transform:scale(1.03)}
@@ -139,8 +139,9 @@ footer a{color:var(--text2)}
 }
 @media(max-width:480px){
   .wrap{padding:0 16px}
-  .topnav-in{padding:0 16px}
-  .topnav-links{gap:8px}
+  .topnav-in{padding:10px 16px;flex-direction:column;align-items:flex-start;gap:6px}
+  .topnav-links{width:100%;gap:6px 12px}
+  .hero-grid>*{min-width:0}
 }
 </style>
 </head>
@@ -172,8 +173,8 @@ footer a{color:var(--text2)}
           <h1 class="fi" style="transition-delay:.05s">Taotao Wang</h1>
           <img class="hero-cn fi" src="chinese_name.png" alt="王滔滔" style="transition-delay:.1s">
         </div>
-        <p class="hero-sub fi" style="transition-delay:.15s">可信智能与开放协同网络系统</p>
-        <p class="hero-desc fi" style="transition-delay:.2s">我的研究位于网络通信、人工智能与密码安全的交叉地带，面向开放网络环境中的高效通信、可信协同与可验证计算，依托网络化系统方法，研究下一代信息基础设施中的体系结构、协议与信任机制。当前重点包括区块链与 Web 3.0 基础设施、可信与可验证人工智能，以及多智能体协同与智能网络系统。</p>
+        <p class="hero-sub fi" style="transition-delay:.15s">面向可信智能的开放网络与系统</p>
+        <p class="hero-desc fi" style="transition-delay:.2s">我的研究位于网络通信、人工智能与密码安全的交叉地带。从 AI 智能体到协同学习，智能服务正日益运行在开放网络与系统之上，而其中的参与者之间无法简单地相互信任。由此我沿三条主线开展研究：如何借助零知识证明等工具，使智能计算可信、可验证；智能体如何在网络中协同；以及区块链等去中心化系统如何在无需中心信任的前提下高效、可扩展地运行。</p>
         <div class="hero-meta fi" style="transition-delay:.25s">
           <div class="meta-line meta-line-emphasis">深圳大学副教授 | 斯坦福-爱思唯尔全球前2%高被引科学家 | 香港中文大学信息工程博士</div>
           <p>邮箱: ttwang<span style="font-size:0;opacity:0;position:absolute;">[nospam]</span>@szu.edu.cn &middot; 备用: postman511<span style="font-size:0;opacity:0;position:absolute;">[nospam]</span>@gmail.com</p>
@@ -205,7 +206,7 @@ footer a{color:var(--text2)}
     <div class="about-text fi">
       <p>我于 2015 年在香港中文大学获得信息工程博士学位，导师为 Soung-Chang Liew 教授。此前，我于 2011 年获得北京邮电大学信息与信号处理硕士学位，并于 2008 年获得电子科技大学电子信息工程专业学士学位。</p>
       <p>2015 至 2016 年，我在香港中文大学网络编码研究所从事博士后研究。2016 年加入深圳大学，现任电子与信息工程学院副教授，同时依托广东省金融科技及数字经济社会科学研究基地开展研究工作。</p>
-      <p>我的长期目标是设计面向下一代信息基础设施的新系统，而不仅是研究孤立算法。贯穿这些工作的主线，是可信智能与开放协同网络系统：在开放网络环境中研究高效通信、可信协同与可验证计算，开展体系结构、协议机制、系统实现与优化研究。</p>
+      <p>我的长期目标是构建可运行的系统，而不仅是研究孤立算法。我的研究起步于无线网络：博士期间在香港中文大学从事物理层网络编码研究，此后开展基于学习的多址接入研究；随后拓展到区块链与去中心化网络；目前聚焦开放网络与人工智能的结合点：智能参与者之间如何协作，以及它们的计算如何被验证。</p>
     </div>
   </div>
 </section>
@@ -215,19 +216,19 @@ footer a{color:var(--text2)}
     <h2 class="fi">研究方向</h2>
     <div class="research-grid stg">
       <div class="research-item fi">
-        <img src="web3.jpg" alt="区块链与 Web 3.0 基础设施" loading="lazy">
-        <h3>区块链与 Web 3.0 基础设施</h3>
-        <p>关注开放网络环境下区块链与 Web 3.0 基础设施的体系结构、协议设计与性能优化，研究如何在缺乏中心信任的条件下，实现身份管理、协同服务、价值交换与数据流通的安全、可扩展与高效运行。</p>
+        <img src="research-trustworthy-ai.jpg" alt="可信与可验证智能计算" loading="lazy">
+        <h3>可信与可验证智能计算</h3>
+        <p>研究如何使 AI 模型与智能体可信、可验证，覆盖模型的训练、微调与推理，以及智能体的决策与行动。重点关注零知识证明、隐私保护计算、可验证机器学习与可验证智能体执行，尤其关注严格的安全保证与实际性能之间的权衡。</p>
       </div>
       <div class="research-item fi">
-        <img src="Trustworthy-AI.png" alt="可信与可验证人工智能" loading="lazy">
-        <h3>可信与可验证人工智能</h3>
-        <p>关注人工智能系统在开放协同环境中的可信性、可验证性与可问责性，研究隐私保护、模型验证、零知识证明与安全协同机制，使人工智能能够成为下一代信息基础设施中的可靠智能组件。</p>
+        <img src="research-agentic-networks.jpg" alt="智能体协同网络" loading="lazy">
+        <h3>智能体协同网络</h3>
+        <p>研究智能体如何在网络中相互发现、共享能力并协同决策，重点关注智能体 P2P 网络、大语言模型多智能体协同机制以及智能体驱动的网络优化，尤其关注协同收益与通信开销之间的权衡。</p>
       </div>
       <div class="research-item fi">
-        <img src="Wireless_Communication_Networks.jpg" alt="多智能体协同与智能网络系统" loading="lazy">
-        <h3>多智能体协同与智能网络系统</h3>
-        <p>关注复杂开放网络环境中多智能体与智能网络系统的协同机理，研究如何通过感知、决策、交互与自适应优化，提升系统效率、鲁棒性与自治能力，以支撑实时、可信、智能的网络化服务。</p>
+        <img src="research-web3.jpg" alt="区块链与去中心化系统" loading="lazy">
+        <h3>区块链与去中心化系统</h3>
+        <p>研究区块链与去中心化系统如何在无需中心信任的前提下高效、可扩展地运行，重点关注区块链网络协议、去中心化身份与 Web 3.0 应用系统，尤其关注去中心化程度与系统性能之间的权衡。</p>
       </div>
     </div>
   </div>
@@ -240,9 +241,9 @@ footer a{color:var(--text2)}
       <div>
         <h3>我期待的学生与合作者</h3>
         <ul>
-          <li>对区块链/Web 3.0 基础设施、可信与可验证人工智能、开放协同网络或智能网络系统方向感兴趣的<span class="kw">博士生</span>。</li>
+          <li>对可信与可验证智能计算、智能体协同网络、区块链与去中心化系统任一方向感兴趣的<span class="kw">博士生</span>。</li>
           <li>希望接受项目制科研训练、并愿意做较强实现工作的<span class="kw">硕士生</span>。</li>
-          <li>从事区块链与开放协同网络系统、大语言模型与多智能体系统、可信与可验证机器学习方向的<span class="kw">博士后或研究人员</span>。</li>
+          <li>在零知识证明与可验证机器学习、大语言模型多智能体系统、区块链与去中心化系统等方向有扎实积累的<span class="kw">博士后或研究人员</span>。</li>
           <li>逻辑清晰、动手能力强、具有自驱力的<span class="kw">本科科研实习生</span>。</li>
         </ul>
       </div>
@@ -251,7 +252,7 @@ footer a{color:var(--text2)}
         <ul>
           <li>从问题提出、系统设计、实现、实验到论文写作的完整科研训练。</li>
           <li>参与协议设计、系统原型、面向系统的人工智能方法、隐私与安全机制以及真实场景应用的机会。</li>
-          <li>可直接加入区块链/Web 3.0、可信与可验证人工智能、大语言模型多智能体系统、智能网络系统与边缘网络等活跃项目。</li>
+          <li>可直接加入三个方向的活跃项目，包括基于零知识证明的可验证 AI、大语言模型多智能体系统，以及区块链/Web 3.0 系统。</li>
           <li>如有兴趣，请邮件发送个人简历、成绩单，以及一段简短的研究兴趣说明。</li>
         </ul>
       </div>
@@ -279,6 +280,7 @@ footer a{color:var(--text2)}
     <h2 class="fi">代表性论文</h2>
     <p class="pub-note fi">* 通讯作者。# 共同一作。</p>
     <ol class="pub-list fi">
+      <li><span class="pt">ZKEnroll: Privacy-Preserving Batch Enrollment for IoT Devices via Recursive Proof Aggregation</span><span class="pm">Zibin Lin, <strong>Taotao Wang*</strong>, Shengli Zhang, Long Shi, Boris D&uuml;dder. <strong>IEEE Internet of Things Journal</strong>, Early Access, 2026.</span></li>
       <li><span class="pt">BioZKFHE: Scalable Encrypted Biometric Identification via Verifiable Homomorphic Similarity Evaluation</span><span class="pm">Rundong Xin, <strong>Taotao Wang*</strong>, Xiaoxiao Wu, Weizhi Meng, Shengli Zhang, Shui Yu. <strong>IEEE Transactions on Dependable and Secure Computing</strong>, Early Access, 2026.</span></li>
       <li><span class="pt">U-DID: A Self-Sovereign Identity Based Trustworthiness for Multimedia in 6G</span><span class="pm">Haoyang Li, Bin Cao, Mingrui Cao, Mingtao Deng, <strong>Taotao Wang</strong>. <strong>IEEE Transactions on Multimedia</strong>, Early Access, 2026.</span></li>
       <li><span class="pt">An LLM-Agent-Based Framework for Age of Information Optimization in Heterogeneous Multiple Access Networks</span><span class="pm">Fang Liu, Erchao Zhu, Jiedan Tan, Jingwen Tong, <strong>Taotao Wang*</strong>, Shengli Zhang. <strong>IEEE Open Journal of the Communications Society</strong>, Early Access, 2026.</span></li>
@@ -419,6 +421,7 @@ footer a{color:var(--text2)}
         <h3>编辑与会议服务</h3>
         <ul>
           <li><span class="sr">程序委员会委员</span>，ACM WWW</li>
+          <li><span class="sr">程序委员会委员</span>，第 9、11、12–14 届大数据分布式存储与区块链技术国际研讨会</li>
           <li><span class="sr">程序委员会委员</span>，IEEE CIC ICC 2019</li>
           <li><span class="sr">程序委员会委员</span>，IEEE ICCC 2020</li>
           <li><span class="sr">专题主席</span>，IEEE WOCC 2022</li>
@@ -432,9 +435,11 @@ footer a{color:var(--text2)}
         <h3>期刊与会议审稿</h3>
         <ul>
           <li>AAAI Conference on Artificial Intelligence</li>
-          <li>IEEE Journal on Selected Areas in Communications</li>
-          <li>IEEE/ACM Transactions on Networking</li>
-          <li>IEEE Transactions on Information Forensics and Security</li>
+          <li>IEEE Transactions on Dependable and Secure Computing (TDSC)</li>
+          <li>IEEE Journal on Selected Areas in Communications (JSAC)</li>
+          <li>IEEE/ACM Transactions on Networking (TON/TNET)</li>
+          <li>IEEE Transactions on Information Forensics and Security (TIFS)</li>
+          <li>ACM Computing Surveys (ACM CSUR)</li>
           <li>IEEE Transactions on Wireless Communications</li>
           <li>IEEE Transactions on Mobile Computing</li>
           <li>IEEE Transactions on Communications</li>
